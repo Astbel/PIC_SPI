@@ -1,0 +1,198 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18323 ]
+[d frameptr 6 ]
+"4 C:\Users\ASUS\Desktop\PIC_Interrupt _SPI\LCM_I2C_SPI\SPI_LCM.X/LCM_sent_double_data.c
+[v _CLK CLK `(v  1 e 1 0 ]
+"22
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+"34
+[v _ISR ISR `II(v  1 e 1 0 ]
+"46
+[v _sentdata sentdata `(uc  1 e 1 0 ]
+"100
+[v _LCD_BIAS_DUTY LCD_BIAS_DUTY `(v  1 e 1 0 ]
+"109
+[v _Clock_Source Clock_Source `(v  1 e 1 0 ]
+"118
+[v _system_enable system_enable `(v  1 e 1 0 ]
+"127
+[v _LCD_ON LCD_ON `(v  1 e 1 0 ]
+"137
+[v _Clear_Ram_data Clear_Ram_data `(v  1 e 1 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"28 C:\Users\ASUS\Desktop\PIC_Interrupt _SPI\LCM_I2C_SPI\SPI_LCM.X\I2C_SPI_LCM.c
+[v _main main `(v  1 e 1 0 ]
+"23 C:\Users\ASUS\Desktop\PIC_Interrupt _SPI\LCM_I2C_SPI\SPI_LCM.X/port.h
+[v _reg reg `ui  1 e 2 0 ]
+"25
+[v _n n `uc  1 e 1 0 ]
+"26
+[v _i i `uc  1 e 1 0 ]
+"27
+[v _endsend endsend `uc  1 e 1 0 ]
+"28
+[v _clk_control clk_control `uc  1 e 1 0 ]
+"29
+[v _CLKOK CLKOK `uc  1 e 1 0 ]
+"32
+[v _CLK_count CLK_count `uc  1 e 1 0 ]
+"33
+[v _sendbit sendbit `uc  1 e 1 0 ]
+[s S167 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"364 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f18323.h
+[u S172 . 1 `S167 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES172  1 e 1 @11 ]
+[s S69 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"497
+[u S74 . 1 `S69 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES74  1 e 1 @16 ]
+"828
+[v _TMR0H TMR0H `VEuc  1 e 1 @22 ]
+[s S96 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"1102
+[s S102 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S107 . 1 `S96 1 . 1 0 `S102 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES107  1 e 1 @23 ]
+[s S39 . 1 `uc 1 T0CKPS 1 0 :4:0 
+`uc 1 T0ASYNC 1 0 :1:4 
+`uc 1 T0CS 1 0 :3:5 
+]
+"1169
+[s S43 . 1 `uc 1 T0CKPS0 1 0 :1:0 
+`uc 1 T0CKPS1 1 0 :1:1 
+`uc 1 T0CKPS2 1 0 :1:2 
+`uc 1 T0CKPS3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS0 1 0 :1:5 
+`uc 1 T0CS1 1 0 :1:6 
+`uc 1 T0CS2 1 0 :1:7 
+]
+[u S52 . 1 `S39 1 . 1 0 `S43 1 . 1 0 ]
+[v _T0CON1bits T0CON1bits `VES52  1 e 1 @24 ]
+[s S146 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"1584
+[u S153 . 1 `S146 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES153  1 e 1 @142 ]
+[s S82 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"1632
+[u S87 . 1 `S82 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES87  1 e 1 @144 ]
+[s S22 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"2195
+[u S29 . 1 `S22 1 . 1 0 ]
+[v _LATCbits LATCbits `VES29  1 e 1 @270 ]
+[s S129 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+]
+"2783
+[u S136 . 1 `S129 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES136  1 e 1 @398 ]
+"16544
+[v _TMR0IF TMR0IF `VEb  1 e 0 @133 ]
+"28 C:\Users\ASUS\Desktop\PIC_Interrupt _SPI\LCM_I2C_SPI\SPI_LCM.X\I2C_SPI_LCM.c
+[v _main main `(v  1 e 1 0 ]
+{
+"73
+} 0
+"118 C:\Users\ASUS\Desktop\PIC_Interrupt _SPI\LCM_I2C_SPI\SPI_LCM.X/LCM_sent_double_data.c
+[v _system_enable system_enable `(v  1 e 1 0 ]
+{
+"124
+} 0
+"22
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+{
+"32
+} 0
+"127
+[v _LCD_ON LCD_ON `(v  1 e 1 0 ]
+{
+"133
+} 0
+"100
+[v _LCD_BIAS_DUTY LCD_BIAS_DUTY `(v  1 e 1 0 ]
+{
+"106
+} 0
+"109
+[v _Clock_Source Clock_Source `(v  1 e 1 0 ]
+{
+"115
+} 0
+"137
+[v _Clear_Ram_data Clear_Ram_data `(v  1 e 1 0 ]
+{
+"143
+} 0
+"46
+[v _sentdata sentdata `(uc  1 e 1 0 ]
+{
+[v sentdata@slave_address slave_address `uc  1 a 1 wreg ]
+"48
+[v sentdata@databuff databuff `[40]uc  1 a 40 0 ]
+"50
+[v sentdata@slave_length slave_length `uc  1 a 1 41 ]
+"46
+[v sentdata@slave_address slave_address `uc  1 a 1 wreg ]
+[v sentdata@data data `ui  1 p 2 1 ]
+[v sentdata@bit bit `uc  1 p 1 3 ]
+"48
+[v sentdata@slave_address slave_address `uc  1 a 1 40 ]
+"93
+} 0
+"34
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"41
+} 0
+"4
+[v _CLK CLK `(v  1 e 1 0 ]
+{
+"20
+} 0
