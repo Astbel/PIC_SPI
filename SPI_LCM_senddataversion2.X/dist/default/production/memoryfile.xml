@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\SPI_LCM_senddataversion2.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>2048</length>
+      <used>487</used>
+      <free>1561</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>256</length>
+      <used>106</used>
+      <free>150</free>
+    </memory>
+  </executable>
+</project>
