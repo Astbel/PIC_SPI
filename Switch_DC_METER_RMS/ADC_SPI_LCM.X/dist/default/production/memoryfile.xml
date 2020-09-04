@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="dist/default/production/ADC_SPI_LCM.X.production.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>8192</length>
+      <used>312</used>
+      <free>7880</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>66786</length>
+      <used>5424</used>
+      <free>61362</free>
+    </memory>
+  </executable>
+</project>
