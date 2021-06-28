@@ -32,6 +32,10 @@ switch_TRIS
 #include "LCM_TABLE.h"
 #include "UPS_STATUS.h"
 
+
+//2020/test 
+float test;
+
 //2020/9/1 user updata for button error check vaule
 unsigned char button_check;
 
